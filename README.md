@@ -1,1 +1,1 @@
-Instagram Clone 
+Instagram Clone using MERN Stack
