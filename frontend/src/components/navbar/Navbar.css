@@ -1,0 +1,10 @@
+.navbar-brand{
+    /* margin-top: -80px; */
+}
+
+@media(min-width: 992px){
+    .navbar{
+        width: 200px;
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,45 @@
+.user-profile-img-box{
+    position: relative;
+}
+.user-profile-content{
+    position: absolute;
+    top: -10px;
+    left: 50%; 
+    z-index: 1;
+    transform: translate( -140%); 
+}
+.user-profile-content .prfile-content-box{
+    width: 60px;
+}
+.prfile-content-box input{
+    width: 100%;
+}
+
+
+.user-profile-img-box .user-profile-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+
+.user-tool-deco{
+    padding: 5px 10px;
+    background-color: rgb(236, 234, 234);
+    border-radius: 10px;
+}
+
+.profile-name-username{
+    background-color: rgb(236, 234, 234);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 1px 7px ;
+}
+
+
+
+.add-high-box svg{
+    background-color: grey;
+    border-radius: 50%;
+}
