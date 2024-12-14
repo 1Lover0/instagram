@@ -1,45 +1,137 @@
-.user-profile-img-box{
-    position: relative;
+.username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.user-profile-content{
-    position: absolute;
-    top: -10px;
-    left: 50%; 
-    z-index: 1;
-    transform: translate( -140%); 
-}
-.user-profile-content .prfile-content-box{
-    width: 60px;
-}
-.prfile-content-box input{
+
+.username-profile{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
     width: 100%;
+    max-width: 900px;
 }
-
-
-.user-profile-img-box .user-profile-image{
+.username-profile-img{
+    overflow: hidden;
+    border-radius: 50%;
     height: 200px;
     width: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username-profile-img img{
     border-radius: 50%;
-    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+.username-profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-tools{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+.user-tools h4{
+    font-size: 19px;
+    font-weight: 400;
+}
+.user-tools button{
+    outline: 0;
+    border: 0;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
 }
 
-
-.user-tool-deco{
-    padding: 5px 10px;
-    background-color: rgb(236, 234, 234);
-    border-radius: 10px;
+.user-posts{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
-
-.profile-name-username{
-    background-color: rgb(236, 234, 234);
-    border-radius: 20px;
+.username-name .name{
+    margin-bottom: 5px;
+}
+.username-name .profile-name{
+    background-color: rgb(67, 67, 67);
     width: fit-content;
-    padding: 1px 7px ;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
+.username-uploads{
+    border-top: 2px solid rgb(67, 67, 67);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.username-menus{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-transform: uppercase;
+}
+.username-menus li{
+    margin-top: -2px;
+    padding: 10px;
+    cursor: pointer;
+}
+.username-menus li.active{
+    border-top: 3px solid white;
+}
 
-
-.add-high-box svg{
-    background-color: grey;
-    border-radius: 50%;
+.username-uploads .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.item{
+    background-color: orange;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.item .item-img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.item-img img{
+    width: 30px;
+}
+.item-count{
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+.item:hover .item-count{
+    display: flex;
+}
+.item-count span{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.item-count img{
+    width: 20px;
+    float: left;
 }

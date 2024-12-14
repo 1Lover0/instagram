@@ -1,26 +1,21 @@
-import React from 'react';
-import Login from './pages/login/Login';
-import Home from './pages/home/Home';
-import Username from './pages/username/Username';
-import Navbar from './components/navbar/Navbar';
-import { Route, Routes } from 'react-router-dom';
+import React from 'react'
+import Home from './pages/home/Home'
+import { Route, Routes } from 'react-router-dom'
+import Username from './pages/username/Username'
+import Navbar from './component/navbar/Navbar'
+import Explore from './pages/explore/Explore'
 
-function App() {
-
+const App = () => {
   return (
-    <div>
-      <div className='d-flex'>
+    <div className='app'>
         <Navbar />
-        {/* <div>
-          dae
-        </div> */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/explore' element={<Explore />} />
+          <Route path='/username' element={<Username />} />
         </Routes>
-      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
